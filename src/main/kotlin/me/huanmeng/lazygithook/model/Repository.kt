@@ -26,7 +26,7 @@ data class Repository(
 
     @JsonProperty("html_url")
     val htmlUrl: String,
-    val description: String,
+    val description: String?,
     val fork: Boolean,
     val url: String,
 
@@ -158,7 +158,7 @@ data class Repository(
 
     @JsonProperty("svn_url")
     val svnUrl: String,
-    val homepage: String,
+    val homepage: String?,
     val size: Long,
 
     @JsonProperty("stargazers_count")
@@ -166,7 +166,7 @@ data class Repository(
 
     @JsonProperty("watchers_count")
     val watchersCount: Long,
-    val language: String,
+    val language: String?,
 
     @JsonProperty("has_issues")
     val hasIssues: Boolean,
@@ -199,7 +199,7 @@ data class Repository(
     val openIssuesCount: Long,
 
     @JsonProperty("license")
-    val license: Any,
+    val license: Any?,
 
     @JsonProperty("allow_forking")
     val allowForking: Boolean,
